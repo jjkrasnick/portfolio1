@@ -1,5 +1,11 @@
 import React from 'react'
 
+```
+/**
+ * Renders a footer component with a copyright notice.
+ * @returns {JSX.Element} A footer element with the current year and copyright information.
+ */
+```
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear()
 
