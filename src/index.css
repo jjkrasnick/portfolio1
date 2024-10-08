@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3B82F6;
+  --color-secondary: #1E40AF;
+  --color-background: #FFFFFF;
+  --color-text: #1F2937;
+  --color-dark-background: #1a202c;
+  --color-dark-text: #F3F4F6;
+}
+
+.dark {
+  --color-background: var(--color-dark-background);
+  --color-text: var(--color-dark-text);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply font-sans bg-background text-text transition-colors duration-300;
+}
+
+.section {
+  @apply py-20;
+}
+
+.container {
+  @apply max-w-5xl mx-auto px-4;
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-12 text-center;
+}
+
+.btn {
+  @apply px-6 py-2 rounded-full transition duration-300 inline-flex items-center justify-center;
+}
+
+.btn-outline {
+  @apply border-2 border-current text-current hover:bg-primary hover:text-white dark:hover:text-dark-blue transition-colors duration-300;
+}
+
+.section-link {
+  @apply transition-colors duration-300 hover:text-primary dark:hover:text-primary cursor-pointer;
+}
+
+@layer components {
+  .section-bg {
+    @apply bg-background dark:bg-dark-background;
+  }
+}
