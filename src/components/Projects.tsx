@@ -53,6 +53,10 @@ const projects = [
   },
 ]
 
+/**
+ * Renders a Projects section component with animated project cards
+ * @returns {JSX.Element} A section containing a grid of project cards with animations and responsive layout
+ */
 const Projects: React.FC = () => {
   return (
     <motion.section 
