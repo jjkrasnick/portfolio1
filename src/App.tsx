@@ -14,6 +14,11 @@ import Footer from './components/Footer'
 import { ThemeProvider } from './context/ThemeContext'
 import LoadingSpinner from './components/LoadingSpinner'
 
+/**
+ * Main application component that renders the entire structure of the website.
+ * It provides theming, SEO optimization, and suspense-based loading.
+ * @returns {JSX.Element} The rendered application structure including header, main content sections, and footer.
+ */
 function App() {
   return (
     <ThemeProvider>
