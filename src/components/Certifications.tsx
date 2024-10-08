@@ -35,6 +35,10 @@ const certifications = [
   },
 ]
 
+/**
+ * Renders a section displaying certifications and licenses.
+ * @returns {JSX.Element} A React component that displays a grid of certification cards with animations.
+ */
 const Certifications: React.FC = () => {
   return (
     <motion.section 
