@@ -40,6 +40,10 @@ const experiences = [
   },
 ]
 
+/**
+ * React functional component that renders an Experience section
+ * @returns {JSX.Element} A section containing a list of experiences with animations
+ */
 const Experience: React.FC = () => {
   return (
     <motion.section 
