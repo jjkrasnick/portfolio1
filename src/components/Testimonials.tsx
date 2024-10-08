@@ -19,6 +19,10 @@ const testimonials = [
   },
 ]
 
+/**
+ * Renders a testimonials section with animated components using Framer Motion.
+ * @returns {JSX.Element} A React functional component that displays a grid of testimonials with animations.
+ */
 const Testimonials: React.FC = () => {
   return (
     <motion.section 
