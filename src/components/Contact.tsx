@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 import { Send } from 'lucide-react'
 import { motion } from 'framer-motion'
 
+/**
+ * Contact component that renders a contact form with animated elements.
+ * @returns {JSX.Element} A section containing a contact form with name, email, and message fields.
+ */
 const Contact: React.FC = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')

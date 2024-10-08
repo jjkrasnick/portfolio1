@@ -54,6 +54,10 @@ const skillCategories = [
   },
 ]
 
+/**
+ * Renders a Skills section component with animated skill categories and items.
+ * @returns {JSX.Element} A motion.section containing skill categories and animated skill items.
+ */
 const Skills: React.FC = () => {
   return (
     <motion.section 

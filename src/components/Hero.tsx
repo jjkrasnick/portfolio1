@@ -5,6 +5,11 @@ import { FaXTwitter, FaTiktok, FaYoutube } from 'react-icons/fa6'
 import { SiMedium } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
+/**
+ * Hero component for the main landing section of a personal portfolio website.
+ * Features a typewriter effect for the subtitle, social media links, and call-to-action buttons.
+ * @returns {React.ReactElement} A section element containing the hero content with animations.
+ */
 const Hero: React.FC = () => {
   const [text, setText] = useState('')
   const fullText = "Software Engineer | Quantitative Trader | Aspiring Founder"

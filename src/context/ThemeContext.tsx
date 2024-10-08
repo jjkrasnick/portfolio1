@@ -9,6 +9,12 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+/**
+ * Provides a theme context for the application, managing theme state and persistence.
+ * @param {Object} props - The component props.
+ * @param {React.ReactNode} props.children - The child components to be wrapped with the ThemeProvider.
+ * @returns {JSX.Element} A ThemeContext.Provider wrapping the child components.
+ */
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>('light');
 
@@ -41,6 +47,11 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   );
 };
 
+/**
+ * Custom hook to access the current theme context
+ * @returns {object} The current theme context
+ * @throws {Error} If used outside of a ThemeProvider
+ */
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {

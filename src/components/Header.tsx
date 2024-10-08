@@ -3,6 +3,10 @@ import { Menu, Moon, Sun, X } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
 
+/**
+ * Header component for a React application
+ * @returns {React.FC} A functional component that renders a responsive header with navigation, theme toggle, and mobile menu
+ */
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme, toggleTheme } = useTheme()

@@ -35,6 +35,10 @@ const researchPapers = [
   },
 ]
 
+/**
+ * Renders a Research section component displaying a list of research publications.
+ * @returns {JSX.Element} A React functional component that renders a section with research publications.
+ */
 const Research: React.FC = () => {
   return (
     <motion.section 
