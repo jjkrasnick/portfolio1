@@ -1,6 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
+/**
+ * Renders the About section of the website.
+ * @returns {JSX.Element} A motion-animated section containing information about the user's background, interests, and career goals.
+ */
 const About: React.FC = () => {
   return (
     <motion.section 
